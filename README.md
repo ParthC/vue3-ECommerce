@@ -1,6 +1,6 @@
 # Vue 3 E-Commerce Demo
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 to learn more.
+This template should help get you started developing with Vue 3 check out the [Vue 3 docs](https://vuejs.org/) to learn more.
 
 ## Project setup
 ```
