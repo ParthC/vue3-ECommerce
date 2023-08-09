@@ -1,0 +1,34 @@
+<template>
+    <div class="drawer-background" :class="{ show: active }" @click="$emit('close-drawer')"></div>
+    <div class="drawer" :show="{show: active}">
+        <div class="drawer-class" @click="$emit('close-drawer')">
+            X
+        </div>
+        <div v-if="product" class="product-details">
+            <h3 class="text-center"> {{ product.name  }}</h3>
+            <p class="description"> {{ product.description  }}</p>
+            <h3 class="text-center"> ${{ product.price.toFixed(2) }}</h3>
+
+            <div class="cart-total" v-if="product_total">
+                <h3>In Cart</h3>
+                <h4> {{ product_total }}</h4>
+            </div>
+
+            <div class="button-container">
+                <button class="add"> Add </button> 
+                <button class="remove"> Remove </button> 
+            </div>
+        </div>  
+    </div>
+</template>
+
+<script>
+export default {
+    props: ['product', 'active'],
+    computed: {
+        product_total() {
+            return 10.00
+        }
+    }
+}
+</script>
