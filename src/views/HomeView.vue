@@ -2,7 +2,8 @@
   <div class="home">
     <Drawer 
     :product="product"
-    :active="active.product_drawer"    
+    :active="active.product_drawer"
+    v-on:close-drawer="closeProductDrawer()"    
     />
     <div class="product-card-container">
       <ProductSummaryCard v-for="product in items" :key="product.id" :product="product"
@@ -34,6 +35,10 @@ export default {
   methods:{
     viewProduct(product) {
       this.product = product
+      this.active.product_drawer = true
+    },
+    closeProductDrawer() {
+      this.active.product_drawer = false
     }
   }
 }
