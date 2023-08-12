@@ -6,6 +6,14 @@
   <router-view/>
 </template>
 
+<script>
+  export default {
+    mounted() {
+      this.$store.commit('updateCartFromLocalStorage');
+    }
+  }
+</script>
+
 <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -22,14 +30,14 @@ html, body {
 }
 
 body {
-  background-color: rgb(245,245,245);
+  background-color: black(245,245,245);
 }
 
 #nav {
   padding: 1rem;
   width: 100%;
   height: 3rem;
-  background-color: white;
+  background-color: black;
   line-height: 3rem;
 
   a {
