@@ -1,10 +1,10 @@
 <template>
     <div class="card">
-        <h3> {{ product.name }} </h3>
+        <h3 class="product-name"> {{ product.name }} </h3>
         <h5 class="price"> Price: ${{ product.price.toFixed(2) }} </h5>
         <p class="description"> Description: {{ product.description }}</p>
         <p class="text"> {{  product.category }}</p>
-        <button class="view-product-button" @click="$emit('view-product', product)"> View </button>
+        <button class="view-product-button" @click="$emit('view-product', product)"> View Detail </button>
     </div>
 </template>
 
@@ -25,24 +25,31 @@ export default {
     margin: 10%;
     padding: 1rem;
     border-radius: 0.5rem;
-    background-color: white;
+    background-color: black;
     box-shadow: 0 0 5px gray;
  
     h5.price {
-    color: gray;
+      color: skyblue;
+    }
+
+    .product-name {
+        color: skyblue;
     }
 
     p.description {
         font-size: .85rem;
+        color: white;
     }
 
     p.text {
-        color: gray;
+        color: white;
+        font-weight: bolder;
+        text-transform: uppercase;
     }
 }
 
 button.view-product-button {
-        padding: 1rem;
+        padding: 0.8rem;
         background-color: rgb(76, 160, 187);
         border: none;
         color: white;

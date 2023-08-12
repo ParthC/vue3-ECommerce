@@ -33,6 +33,34 @@ const items = [
         price: 250.00,
         category: 'Electronics',
         description: 'the AirPods 3 have more innovative technology like the spatial audio feature and adaptive equalizer to create a more immersive experience,'
+    },
+    {
+        id: 6,
+        name: "Macbook",
+        price: 1500.00,
+        category: 'Electronics',
+        description: 'The MacBook Pro 16 with M2 Pro and M2 Max is one of the most powerful and long-lasting laptops on the market'
+    },
+    {
+        id: 7,
+        name: "Airpods",
+        price: 250.00,
+        category: 'Electronics',
+        description: 'the AirPods 3 have more innovative technology like the spatial audio feature and adaptive equalizer to create a more immersive experience,'
+    },
+    {
+        id: 8,
+        name: "Macbook",
+        price: 1500.00,
+        category: 'Electronics',
+        description: 'The MacBook Pro 16 with M2 Pro and M2 Max is one of the most powerful and long-lasting laptops on the market'
+    },
+    {
+        id: 9,
+        name: "Airpods",
+        price: 250.00,
+        category: 'Electronics',
+        description: 'the AirPods 3 have more innovative technology like the spatial audio feature and adaptive equalizer to create a more immersive experience,'
     }
 ]
 

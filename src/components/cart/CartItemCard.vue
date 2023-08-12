@@ -1,11 +1,11 @@
 <template>
     <div class="cart-item-card">
         <div class="header">
-            <h3> {{ product.name }}</h3>
-            <h4>In Cart: {{ product.quantity }}</h4>
-            <h4>Total Cost: {{ itemPrice }}</h4>
+            <h3> {{ item_name }}</h3>
+            <h4>Item in Cart: {{ item_qty }}</h4>
+            <h4>Total Cost: {{ item_price }}</h4>
         </div>
-        <p> {{ description }}</p>
+        <p> {{ item_description }}</p>
     </div>
 </template>
 
@@ -14,10 +14,16 @@
 export default {
     props: ['product'],
     computed: {
-        description(){
-            return this.product.description
+        item_description(){
+            return this.product.map(i => i.description).toString()
         },
-        itemPrice() {
+        item_qty() {
+            return this.product.map(i => i.quantity).toString()
+        },
+        item_name() {
+            return this.product.map(i => i.name).toString()
+        },
+        item_price() {
             return this.$store.getters.cartTotal
         }
     }

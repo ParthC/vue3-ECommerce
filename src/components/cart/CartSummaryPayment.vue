@@ -2,7 +2,7 @@
     <div class="cart-item-card">
         <h3>Cart Total: $ {{ cart_total.toFixed(2) }}</h3>
         
-        <button class="view-product-button"> Pay By Credit Card</button>
+        <button class="view-product-button"> Payment </button>
     </div>
 </template>
 
@@ -17,7 +17,3 @@ export default {
 
 }
 </script>
-
-<style>
-
-</style>
