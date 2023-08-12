@@ -50,7 +50,7 @@ export default {
     position: fixed;
     left: 0;
     top: 0;
-    background-color: rgb(124, 124, 124, 0.50);
+    background-color: rgba(104, 152, 207, 0.5);
     z-index: 100;
     display: none;
     transition: display .5s;
@@ -91,7 +91,7 @@ export default {
     cursor: pointer;
 
     &:hover{
-        background-color: lightgray;
+        background-color: cyan;
     }
 }
 
