@@ -10,12 +10,12 @@
             <h3 class="text-center"> ${{ product.price.toFixed(2) }}</h3>
 
             <div class="cart-total" v-if="product_total">
-                <h3>In Cart</h3>
+                <h3>Total</h3>
                 <h4> {{ product_total }}</h4>
             </div>
 
             <div class="button-container">
-                <button class="add" @click="addToCart()"> Add </button> 
+                <button class="add" @click="addToCart()"> Add To Cart </button> 
                 <button class="remove" @click="removeFromCart()"> Remove </button> 
             </div>
         </div>  
@@ -50,11 +50,10 @@ export default {
     position: fixed;
     left: 0;
     top: 0;
-    background-color: rgba(104, 152, 207, 0.5);
+    background-color: rgba(137, 152, 170, 0.5);
     z-index: 100;
     display: none;
     transition: display .5s;
-
     &.show{
         display: block;
     }
@@ -63,7 +62,7 @@ export default {
 .drawer {
     width: 95vw;
     height: 100vh;
-    background-color: white;
+    background-color: skyblue;
     position: fixed;
     top: 0;
     left: -105vw;
@@ -91,7 +90,7 @@ export default {
     cursor: pointer;
 
     &:hover{
-        background-color: cyan;
+        background-color: rgb(212, 114, 114);
     }
 }
 
@@ -114,6 +113,8 @@ export default {
             border-radius: 5px;
             margin: 0 5px 50px 5px;
             cursor: pointer;
+            color: white;
+            background-color: black;
         }
     }
 }
